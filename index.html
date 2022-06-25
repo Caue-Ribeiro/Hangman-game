@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./Hangman.js" defer></script>
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="shortcut icon"
+            href="./Hangman-pieces/rope.png"
+            type="image/x-icon"
+        />
+        <title>HANGMAN</title>
+    </head>
+    <body>
+        <div class="container">
+            <img id="paper" src="./paper-textured.jpg" alt="paper-textured" />
+            <h1>Hangman</h1>
+            <div class="wrong-guesses">
+                Wrong guess: <span class="mistake">0</span> of
+                <span class="maxWrong">6</span>
+            </div>
+            <section class="center-content">
+                <img
+                    id="hangman"
+                    src="./Hangman-pieces/hangman0.png"
+                    alt="Hangman"
+                />
+                <p>Guess the programming language:</p>
+                <p class="spotted-word"></p>
+                <p id="game-situation"></p>
+                <div class="keyboard"></div>
+                <button class="reset">Reset</button>
+            </section>
+        </div>
+    </body>
+</html>

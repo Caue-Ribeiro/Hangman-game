@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Overpass:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body {
+    position: absolute;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+h1 {
+    text-align: center;
+}
+
+.wrong-guesses {
+    float: right;
+    margin-right: 50px;
+}
+
+.center-content > p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.reset {
+    margin-left: 47%;
+    appearance: none;
+    border: none;
+    background-color: blueviolet;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0px 5px 10px black;
+    cursor: pointer;
+}
+.reset:hover {
+    padding: 12px;
+    background-color: rgb(166, 96, 231);
+    transition: all 0.3s;
+}
+.center-content > img {
+    margin-left: 45%;
+}
+
+#paper {
+    position: absolute;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.keyboard {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(13, 50px);
+}
+
+.keyboardStyle {
+    appearance: none;
+    border: none;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(31, 106, 219);
+    color: wheat;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.keyboardStyle:hover {
+    background-color: rgb(31, 144, 219);
+    width: 42px;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+    .keyboardStyle {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 665px) {
+    .keyboard {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(10, 50px);
+    }
+    .keyboardStyle {
+        font-size: 20px;
+    }
+
+    .wrong-guesses {
+        display: none;
+    }
+}
+@media screen and (max-width: 376px) {
+    .center-content > img {
+        margin-left: 35%;
+        width: 100px;
+        height: 200px;
+    }
+
+    .keyboard {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(8, 30px);
+    }
+
+    .reset {
+        margin-left: 40%;
+        padding: 6px;
+    }
+    .keyboardStyle {
+        width: 25px;
+    }
+
+    .keyboardStyle:hover {
+        width: 27px;
+    }
+    .center-content > p {
+        font-size: 15px;
+    }
+}
