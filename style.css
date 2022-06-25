@@ -90,7 +90,7 @@ h1 {
         font-size: 25px;
     }
 }
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 800px) {
     .keyboard {
         display: grid;
         justify-content: center;
@@ -104,24 +104,8 @@ h1 {
         display: none;
     }
 }
-@media screen and (max-width: 510px) {
-    .keyboard {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(8, 50px);
-    }
-    .keyboardStyle {
-        font-size: 18px;
-    }
 
-    .wrong-guesses {
-        display: none;
-    }
-    .center-content > img {
-        margin-left: 35%;
-    }
-}
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .center-content > img {
         margin-left: 35%;
         width: 100px;
