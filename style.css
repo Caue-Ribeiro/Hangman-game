@@ -104,7 +104,24 @@ h1 {
         display: none;
     }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 510px) {
+    .keyboard {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(8, 50px);
+    }
+    .keyboardStyle {
+        font-size: 18px;
+    }
+
+    .wrong-guesses {
+        display: none;
+    }
+    .center-content > img {
+        margin-left: 35%;
+    }
+}
+@media screen and (max-width: 400px) {
     .center-content > img {
         margin-left: 35%;
         width: 100px;
